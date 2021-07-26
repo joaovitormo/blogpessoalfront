@@ -1,0 +1,9 @@
+#img-bg {
+background-image: url('https://static.tumblr.com/cbdjwys/efboyn5jc/canada_hd_wallpaper_1920x1080.jpg');
+
+height: 100vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

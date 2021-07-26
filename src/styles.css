@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.link-black {
+  color: black;
+  transform:0.3s;
+}
+
+.link-black:hover {
+  color: rgb(63, 62, 62);
+  transform:0.3s;
+}
+
