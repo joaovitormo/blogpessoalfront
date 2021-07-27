@@ -1,5 +1,6 @@
 #img-bg {
-  background-image: url('https://static.tumblr.com/cbdjwys/efboyn5jc/canada_hd_wallpaper_1920x1080.jpg');
+  background-image: url('https://images8.alphacoders.com/866/866407.png');
+  /*background-color: rgb(32, 32, 32);*/
 
   height: 100vh;
 
@@ -7,3 +8,17 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .bg-allblack {
+    background-color: rgb(44, 44, 44);
+    color:#fff;
+  }
+input, select {
+  background-color: rgb(63, 63, 63);
+  color:#fff;
+  border:none
+}
+
+input:focus {
+  background-color: rgb(63, 63, 63);
+  color:#fff;
+}
