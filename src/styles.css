@@ -13,3 +13,31 @@ html {
   scroll-behavior: smooth;
 }
 
+.fs-54 {
+  font-size: 54pt;
+}
+
+.fs-18 {
+  font-size: 18px;
+
+}
+
+.midBlack {
+  background-color: #242526;
+  color:#fff;
+}
+
+.allBlack {
+  background-color:#18191A !important;
+  color:#fff;
+}
+.allBlack a{
+  color:#fff;
+}
+
+body {
+  background-color:#18191A !important;
+  color:#fff;
+}
+
+
