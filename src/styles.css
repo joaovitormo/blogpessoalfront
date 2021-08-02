@@ -9,3 +9,7 @@
   transform:0.3s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
