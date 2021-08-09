@@ -5,7 +5,7 @@
         <img src="{{foto}}" alt="" width="50" height="30" class="img-fluid rounded-circle m-2">
 
         <p aria-disabled="true" class="navbar-brand mt-3" >Olá {{nome}}</p>
-        <a><i class="fa fa-pencil-square-o m-0 p-0" aria-hidden="true"></i></a>
+        <a [routerLink]="['/user-edit', id]"><i class="fa fa-pencil-square-o m-0 p-0" aria-hidden="true"></i></a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
