@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common'; //faz com que a página não atualize com href
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +20,7 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostageDeleteComponent } from './delete/postage-delete/postage-delete.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
+import { AlertasComponent } from './alertas/alertas.component';
 
 
 @NgModule({
@@ -34,12 +37,15 @@ import { UserEditComponent } from './edit/user-edit/user-edit.component';
     PostagemEditComponent,
     PostageDeleteComponent,
     UserEditComponent,
+    AlertasComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ModalModule.forRoot(),
+    OrderModule,
   ],
   providers: [{
     provide:LocationStrategy,

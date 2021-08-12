@@ -16,7 +16,7 @@ export class PostagemService {
   }
 
   getAllPostagens(): Observable<Postagem[]> {
-    return this.http.get<Postagem[]>('https://myworldblog.herokuapp.com/postagens', this.token)
+    return this.http.get<Postagem[]>('https://myworldblog.herokuapp.com/postagens')
   }
 
   getByIdPostagem(id: number): Observable<Postagem>{
@@ -24,14 +24,19 @@ export class PostagemService {
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.post<Postagem>('https://myworldblog.herokuapp.com/postagens', postagem, this.token)
+    return this.http.post<Postagem>('https://myworldblog.herokuapp.com/postagens', postagem)
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.put<Postagem>('https://myworldblog.herokuapp.com/postagens', postagem, this.token)
+    return this.http.put<Postagem>('https://myworldblog.herokuapp.com/postagens', postagem)
   }
 
   deletePostagem(id: number) {
     return this.http.delete(`https://myworldblog.herokuapp.com/postagens/${id}`)
+  }
+
+  //pesquisar postagem
+  getByTituloPostagem(titulo: string): Observable<Postagem[]>{
+    return this.http.get<Postagem[]>(`https://myworldblog.herokuapp.com/postagens/titulo/${titulo}`, this.token)
   }
 }
