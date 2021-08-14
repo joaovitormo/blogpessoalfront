@@ -60,6 +60,11 @@
             <p class="card-text"><small class="text-muted">
               Por: {{item.usuario.nome}}
             </small></p>
+            <p class="card-text"><small class="text-muted">
+              <button (click)='getPostagemById(item.id)' (click)='descurtida(item.id)' class="btn"><i class="fa fa-thumbs-down text-white"  aria-hidden="true"></i></button>
+              Curtidas: {{item.curtidas}}
+              <button (click)='getPostagemById(item.id)' (click)='curtida(item.id)' class="btn"><i class="fa fa-thumbs-up text-white" aria-hidden="true"></i></button>
+            </small></p>
           </div>
         </div>
       </div>

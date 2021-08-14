@@ -37,6 +37,15 @@ export class PostagemService {
 
   //pesquisar postagem
   getByTituloPostagem(titulo: string): Observable<Postagem[]>{
-    return this.http.get<Postagem[]>(`https://myworldblog.herokuapp.com/postagens/titulo/${titulo}`, this.token)
+    return this.http.get<Postagem[]>(`https://myworldblog.herokuapp.com/postagens/titulo/${titulo}`)
   }
+
+  putCurtir(id: number): Observable<Postagem> {
+    return this.http.put<Postagem>(`https://myworldblog.herokuapp.com/postagens/curtir/${id}`, this.token)
+  }
+
+  putDescurtir(id: number): Observable<Postagem> {
+    return this.http.put<Postagem>(`https://myworldblog.herokuapp.com/postagens/descurtir/${id}`, this.token)
+  }
+
 }
